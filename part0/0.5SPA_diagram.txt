@@ -12,9 +12,4 @@ sequenceDiagram
        browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
        server-->>browser: [{"content":"New note from here!","date":"2023-10-01T03:42:41.712Z"},...]
        
-       
-       browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 
-       server-->>browser: Status 201 Created
-       
-       Note right of browser: The event handler prevents default form submission and renders new not on page + sends new note to server.
