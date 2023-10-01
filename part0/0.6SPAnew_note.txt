@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+       Note right of browser: USer makes new note and clicks save button
+
+       
+       browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+       server-->>browser: Status 201 Created & JSON content [{"content":"New note from here!","date":"2023-10-01T03:42:41.712Z"},...]
